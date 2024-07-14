@@ -28,7 +28,7 @@ const Navbar = () => {
                     </Link>
                 </div>
                 {/*  */}
-                <div className=" order-3 md:order-2 flex">
+                <div className=" order-3 md:order-2 flex  ">
                     <ul
                         className={`md:flex md:space-x-8 font-bold ${open
                             ? "absolute flex top-20   flex-col w-[100%] right-0 space-y-6 bg-gray-900  text-white p-10 "
@@ -100,13 +100,13 @@ const Navbar = () => {
                     </ul>
 
                     <Link to="/login">
-                        <div className="flex items-center justify-center py-1.5 bg-blue-600 px-2 rounded-full font-semibold hover:text-white md:ml-6 hover:scale-110" style={{ backgroundColor: '#1676BC', marginBottom: '0.1rem', marginRight: '-2rem' }}>
+                        <div className="flex items-center justify-center py-1.5 bg-blue-600 px-2 rounded-full font-semibold hover:text-white md:ml-6  hover:scale-110 w-10 h-10" style={{ backgroundColor: '#1676BC' }}>
 
                             <img
                                 src={userIcon}
                                 alt="Login"
                                 className="object-contain"
-                                style={{ width: '5rem', height: '1.6rem', pointerEvents: 'none' }} // Adding pointerEvents none here
+                                style={{ width: '5rem', height: '1.6rem', pointerEvents: 'none' , cursor:'pointer'}} // Adding pointerEvents none here
                             />
 
                         </div>
