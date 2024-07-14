@@ -11,7 +11,7 @@ export default function About() {
   }}>
         <span className="text-red-500"> About</span> Us
       </h2>
-      <div className="flex flex-col md:flex-row  px-4 md:px-20 gap-4 md:gap-8 vision-container">
+      <div className="flex flex-col items-center md:flex-row  px-4 md:px-20 gap-4 md:gap-8 vision-container">
   <div className="pt-4 md:w-2/3">
     <h3 className="py-4 text-xl font-bold">Our Mission & Vision</h3>
     <span className="block w-[300px] h-px bg-gray-700" aria-hidden="true"></span>
@@ -30,7 +30,7 @@ export default function About() {
     />
   </div>
 </div>
-      <p className="px-15 py-4 text-xl md:px-15">
+      <p className="px-10 py-4 text-xl md:px-15">
         We combine cutting-edge technology with industry expertise to deliever
         engaging, interactive and affective learning experiences.Our courses
         are designed with the learner in mind, offering flexibility and

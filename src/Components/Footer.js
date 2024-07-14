@@ -14,7 +14,7 @@ const Footer = () => {
         <div className='text-white text-xs mb-4 md:mb-0'>
           &copy; CopyRights. All Rights Reserved
         </div>
-        <div className='flex gap-4'>
+        <div className='flex gap-4 items-center'>
           <a href='https://web.facebook.com/tractaxila?_rdc=1&_rdr' target='_blank' rel='noopener noreferrer'>
             <img className='h-[20px] sm:h-[25px] cursor-pointer hover:scale-110 transition-transform' src={facebookicon} alt='Facebook' />
           </a>

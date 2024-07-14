@@ -29,7 +29,7 @@ const Navbar = () => {
                     </Link>
                 </div>
                 {/*  */}
-                <div className=" order-3 md:order-2 flex  ">
+                <div className=" order-3 md:order-2 flex items-center ">
                     <ul
                         className={`md:flex md:space-x-8 font-bold ${open
                             ? "absolute flex top-20   flex-col w-[100%] right-0 space-y-6 bg-gray-900  text-white p-10 "
