@@ -27,7 +27,7 @@ function App() {
           <Route path='/userprofile' element={<Profile />}></Route>
         </Routes>
         <Footer />
-        <img src={WhatsappIcon} alt='WhatsappIcon' className="cursor-pointer hover:scale-110" style={{width:"5rem", height:"3rem", position:'fixed', bottom:20, right:5}}/>
+        <img src={WhatsappIcon} alt='WhatsappIcon' className="cursor-pointer hover:scale-110" style={{width:"5rem", height:"3rem", position:'fixed', bottom:60, right:10}}/>
       </BrowserRouter>
     </>
   );

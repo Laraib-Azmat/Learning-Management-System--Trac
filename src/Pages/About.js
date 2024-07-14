@@ -30,7 +30,7 @@ export default function About() {
     />
   </div>
 </div>
-      <p className="px-20 py-4 text-xl md:px-20">
+      <p className="px-15 py-4 text-xl md:px-15">
         We combine cutting-edge technology with industry expertise to deliever
         engaging, interactive and affective learning experiences.Our courses
         are designed with the learner in mind, offering flexibility and

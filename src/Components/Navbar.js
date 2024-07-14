@@ -1,12 +1,13 @@
 import React, { useContext } from "react";
 import logo from "../Assests/trac_.png";
 import userIcon from "../Assests/icons8-user-50.png";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { useState } from "react";
 
 const Navbar = () => {
     const [open, setOpen] = useState(false);
     const [active, setactive] = useState("Home");
+    const navigate = useNavigate();
     return (
         <>
             <div className=" relative z-1  w-[100%] z-[1]  bg-[#5fd6f4] flex  justify-between items-center p-3 text-lg">
@@ -103,6 +104,7 @@ const Navbar = () => {
                         <div className="flex items-center justify-center py-1.5 bg-blue-600 px-2 rounded-full font-semibold hover:text-white md:ml-6  hover:scale-110 w-10 h-10" style={{ backgroundColor: '#1676BC' }}>
 
                             <img
+                                onClick={()=>navigate('/login')}
                                 src={userIcon}
                                 alt="Login"
                                 className="object-contain"
