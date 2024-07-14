@@ -66,11 +66,14 @@ export default function PopularCourses() {
                   BY: {course.author}
                 </p>
                 <div className="flex justify-end">
-                  <button className="flex items-center px-4 py-2 mb-2 mr-2 rounded-full ">
+                  <button className="flex items-center justify-center px-4 py-2 mb-2 mr-2 rounded-full ">
                     Learn More
-                    <span className="flex items-center justify-center w-6 h-6 ml-2 text-white bg-black rounded-full">
-                      →
-                    </span>
+                   
+                    <button
+            className="w-8 h-8 ml-2 text-white bg-black rounded-full hover:bg-gray-300 hover:text-black"
+          >
+            {"->"}
+          </button>
                   </button>
                 </div>
               </div>
