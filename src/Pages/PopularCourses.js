@@ -66,7 +66,8 @@ export default function PopularCourses() {
                   BY: {course.author}
                 </p>
                 <div className="flex justify-end">
-                  <button className="flex items-center justify-center px-4 py-2 mb-2 mr-2 rounded-full ">
+                 <Link to={`/course/${course.id}`} >
+                 <button className="flex items-center justify-center px-4 py-2 mb-2 mr-2 rounded-full ">
                     Learn More
                    
                     <button
@@ -75,6 +76,7 @@ export default function PopularCourses() {
             {"->"}
           </button>
                   </button>
+                 </Link>
                 </div>
               </div>
             ))}

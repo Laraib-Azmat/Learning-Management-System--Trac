@@ -4,11 +4,13 @@ import facebookicon from "../Assests/facebook-app-round-white-icon.webp"
 import instagramicon from "../Assests/instagram-white-icon.webp"
 import youtubeicon from "../Assests/youtube-app-white-icon.webp"
 import linkedinicon from "../Assests/linkedin-app-white-icon.webp"
+import { useNavigate } from 'react-router-dom'
 
 const Footer = () => {
+  const navigate = useNavigate()
     return (
         <div className='bg-black p-4 flex flex-col md:flex-row justify-between items-center text-center md:text-left'>
-        <div className='mb-4 md:mb-0'>
+        <div className='mb-4 md:mb-0 cursor-pointer ' onClick={()=>{window.scrollTo(0,0);navigate('/')}}>
           <img src={logo} alt="Logo" className='h-[25px] sm:h-[50px]' />
         </div>
         <div className='text-white text-xs mb-4 md:mb-0'>

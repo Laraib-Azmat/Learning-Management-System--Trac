@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Searchbar from '../Components/Searchbar'
 import GradeIcon from '@mui/icons-material/Grade';
 import { useParams } from 'react-router-dom';
@@ -11,6 +11,15 @@ const Pricing = () => {
     const { id } = useParams()
     const filtercourse = dummydata.filter((e) => e.id == id)
 
+    const scrollToTop = () => {
+        window.scrollTo({
+          top: 0,
+        });
+      };
+      
+      useEffect(() => {
+        scrollToTop();
+      }, []); 
 
     return (
         <div className='bg-[#e3faff] '>
