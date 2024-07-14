@@ -10,7 +10,7 @@ const Navbar = () => {
     const navigate = useNavigate();
     return (
         <>
-            <div className=" relative z-1  w-[100%] z-[1]  bg-[#5fd6f4] flex  justify-between items-center p-3 text-lg">
+            <div className=" relative z-1  w-[100%] z-[1]  bg-[#5fd6f4] flex  justify-between items-center p-3 text-lg  ">
                 <div className="h-[65px] order-1 md:order-1">
                     <Link
                         to={"/"}
@@ -31,7 +31,7 @@ const Navbar = () => {
                 {/*  */}
                 <div className=" order-3 md:order-2 flex items-center ">
                     <ul
-                        className={`md:flex md:space-x-8 font-bold ${open
+                        className={`md:flex md:space-x-8 font-bold  ${open
                             ? "absolute flex top-20   flex-col w-[100%] right-0 space-y-6 bg-gray-900  text-white p-10 "
                             : "hidden "
                             } `}

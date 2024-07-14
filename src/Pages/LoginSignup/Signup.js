@@ -6,7 +6,7 @@ export default function Signup() {
   return (
     <div  className=" h-[90vh] relative flex items-center justify-center  bg-cover bg-center" style={{ backgroundImage:`url(${background})` }}>
     <div className="absolute inset-0 bg-black opacity-40"></div>
-      <div className="relative z-10 flex items-center justify-center p-6 bg-white bg-opacity-0 shadow-lg backdrop-filter backdrop-blur-md w-full max-w-md h-[90%]" style={{  boxShadow: '0 0 1px 1px rgba(255, 255, 255,0.9)'  }}>
+      <div className="relative  flex items-center justify-center p-6 bg-white bg-opacity-0 shadow-lg backdrop-filter backdrop-blur-md w-full max-w-md h-[90%]" style={{  boxShadow: '0 0 1px 1px rgba(255, 255, 255,0.9)'  }}>
         <form className="w-full">
           <h2 className="text-3xl font-bold text-center text-white mb-6">Signup</h2>
           <div className="mb-4">
