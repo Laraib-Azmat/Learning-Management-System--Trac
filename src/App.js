@@ -10,7 +10,9 @@ import Contact from './Pages/Contact';
 import Home from './Pages/Home';
 import Info from './Pages/Info';
 import Profile from "./Pages/Profile";
-import WhatsappIcon from "./Assests/WhatsApp-logo.png"
+import WhatsappIcon from "./Assests/WhatsApp-logo.png";
+import CourseDetails from './Pages/CourseDetails';
+
 function App() {
   return (
     <>
@@ -19,6 +21,7 @@ function App() {
         <Routes>
           <Route path='/' element={<Home/>}></Route>
           <Route path='/course/:id' element={<Pricing />}></Route>
+          <Route path='/coursedetails/:id' element={<CourseDetails />}></Route>
           <Route path='/course' element={<Courses />}></Route>
           <Route path='/info' element={<Info />}></Route>
           <Route path='/contact' element={<Contact />}></Route>
