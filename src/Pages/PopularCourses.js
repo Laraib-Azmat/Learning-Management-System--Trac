@@ -49,7 +49,8 @@ export default function PopularCourses() {
           </button>
 
           <div className="grid grid-cols-1 gap-8 px-3.5 md:grid-cols-2 xl:grid-cols-4 md:px-4">
-            {visibleCourses.map((course) => (
+           {visibleCourses.map((course) => (
+              <Link to={`/coursedetails/${course.id}`} key={course.id} >
               <div
                 key={course.id}
                 className="bg-white border border-black rounded-lg shadow-md "
@@ -66,19 +67,10 @@ export default function PopularCourses() {
                   BY: {course.author}
                 </p>
                 <div className="flex justify-end">
-                 <Link to={`/course/${course.id}`} >
-                 <button className="flex items-center justify-center px-4 py-2 mb-2 mr-2 rounded-full ">
-                    Learn More
-                   
-                    <button
-            className="w-8 h-8 ml-2 text-white bg-black rounded-full hover:bg-gray-300 hover:text-black"
-          >
-            {"->"}
-          </button>
-                  </button>
-                 </Link>
+                <Link to={`/course/${course.id}`}><span className='text-xs cursor-pointer'>Learn more<ArrowRightIcon></ArrowRightIcon></span></Link>
                 </div>
               </div>
+              </Link>
             ))}
           </div>
           <button
