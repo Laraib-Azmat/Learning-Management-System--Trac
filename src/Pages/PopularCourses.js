@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import dummydata from '../Components/Dummydata';
+import ArrowRightIcon from '@mui/icons-material/ArrowRight';
 
 export default function PopularCourses() {
 

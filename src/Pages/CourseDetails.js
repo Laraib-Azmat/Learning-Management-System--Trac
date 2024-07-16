@@ -2,7 +2,8 @@ import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import dummydata from "../Components/Dummydata";
 import Certificate from "../Components/Certificate";
-import authorImage from "../Assests/author.jpg";
+import authorImage from "../Assests/author.jpeg";
+
 import {
   FaVideo,
   FaCheckCircle,
