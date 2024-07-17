@@ -27,7 +27,7 @@ const Footer = () => {
             <img className='h-[15px] sm:h-[20px] cursor-pointer hover:scale-110 transition-transform' src={youtubeicon} alt='YouTube' />
           </a>
           <a href='https://www.linkedin.com/company/tractaxila/' target='_blank' rel='noopener noreferrer rounded-lg'>
-            <img className='h-[15px] sm:h-[20px] cursor-pointer hover:scale-110 transition-transform rounded-lg' src={linkedinicon} alt='LinkedIn' />
+            <img className='h-[15px] sm:h-[20px] cursor-pointer hover:scale-110 transition-transform rounded-sm md:rounded-lg' src={linkedinicon} alt='LinkedIn' />
           </a>
         </div>
       </div>
