@@ -51,7 +51,7 @@ export default function PopularCourses() {
 
           <div className="grid grid-cols-1 gap-8 px-3.5 md:grid-cols-2 xl:grid-cols-4 md:px-4">
            {visibleCourses.map((course) => (
-              <Link to={`/coursedetails/${course.id}`} key={course.id} >
+              <Link onClick={()=>window.scrollTo(0,0)} to={`/coursedetails/${course.id}`} key={course.id} >
               <div
                 key={course.id}
                 className="bg-white border border-black rounded-lg shadow-md transition-transform duration-300 ease-in-out transform hover:scale-105 "
@@ -68,7 +68,7 @@ export default function PopularCourses() {
                   BY: {course.author}
                 </p>
                 <div className="flex justify-end">
-                <Link to={`/course/${course.id}`}><span className='text-xs cursor-pointer'>Learn more<ArrowRightIcon></ArrowRightIcon></span></Link>
+                <Link onClick={()=>window.scrollTo(0,0)} to={`/course/${course.id}`}><span className='text-xs cursor-pointer'>Learn more<ArrowRightIcon></ArrowRightIcon></span></Link>
                 </div>
               </div>
               </Link>
