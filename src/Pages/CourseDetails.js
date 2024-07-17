@@ -28,7 +28,7 @@ const CourseDetail = () => {
     switch (authorTab) {
       case "Profile":
         return (
-          <div>
+          <div className="text-lg">
             Michael Taggart is a career technologist and educator, with over a
             decade of experience building software and IT systems and training
             others how to do the same. Currently a Senior Cybersecurity Analyst
@@ -41,7 +41,7 @@ const CourseDetail = () => {
         );
       case "ContactInfo":
         return (
-          <div>
+          <div className="flex flex-col justify-center">
             <b>Twitter: </b>
             <a target="blank" href="https://twitter.com/mttaggart">
               {" "}
@@ -89,7 +89,7 @@ const CourseDetail = () => {
     switch (activeTab) {
       case "CourseCurriculum":
         return (
-          <div>
+          <div >
             <h3 className="text-xl font-bold mb-2">Course Curriculum</h3>
             <div className="flex items-center mb-4">
               <div className="h-5 bg-gray-300 w-full">
@@ -125,16 +125,16 @@ const CourseDetail = () => {
         );
       case "Author":
         return (
-          <div className="flex flex-col md:flex-row">
+          <div className="flex flex-col md:flex-row items-center">
             <img
               src={authorImage}
-              className="w-full md:w-1/3 h-full mb-4 md:mb-0"
+              className=" w-1/2 sm:w-1/3 lg:w-1/4 h-full mb-4 md:mb-0"
               alt="Author"
             />
             <div className="md:ml-4">
               <div className="flex">
                 <button
-                  className={`py-2 px-4 font-bold bg-gray-100 ${
+                  className={`py-2 px-4 font-bold text-lg bg-gray-100 ${
                     authorTab === "Profile" ? "bg-gray-300 text-red-600" : ""
                   }`}
                   onClick={() => setAuthorTab("Profile")}
@@ -142,7 +142,7 @@ const CourseDetail = () => {
                   Profile
                 </button>
                 <button
-                  className={`py-2 px-4 font-bold bg-gray-100 ${
+                  className={`py-2 px-4 font-bold text-lg bg-gray-100 ${
                     authorTab === "ContactInfo"
                       ? "bg-gray-300 text-red-600"
                       : ""
@@ -158,7 +158,7 @@ const CourseDetail = () => {
         );
       case "Certificate":
         return (
-          <div style={{ marginTop: "-8rem", width: "100%", height: "40rem" }}>
+          <div style={{ marginTop: "-8rem", width: "100%"}}>
             <Certificate />
           </div>
         );
@@ -168,11 +168,11 @@ const CourseDetail = () => {
   };
 
   return (
-    <div className="flex flex-col md:flex-row">
+    <div className="flex   flex-col md:flex-row">
       {sidebarOpen && (
         <div
           className={`w-full md:w-64 p-4 bg-gray-200 `}
-          style={{ height: "100vh" }}
+         
         >
           <img
             src={course.image}
@@ -223,7 +223,7 @@ const CourseDetail = () => {
         </div>
       )}
       <div
-        className={`flex-1 p-4 `}
+        className={ sidebarOpen ? "flex-1 p-4": "p-4"}
         style={{ height: "100vh" }}
       >
         <button

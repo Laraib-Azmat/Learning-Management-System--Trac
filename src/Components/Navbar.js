@@ -31,7 +31,7 @@ const Navbar = () => {
                 {/*  */}
                 <div className=" order-3 md:order-2 flex items-center ">
                     <ul
-                        className={`md:flex md:space-x-8 font-bold text-sm ${open
+                        className={`md:flex md:space-x-8 font-bold text-md ${open
                             ? "absolute flex top-20   flex-col w-[100%] right-0 space-y-6 bg-gray-900  text-white p-10 "
                             : "hidden "
                             } `}

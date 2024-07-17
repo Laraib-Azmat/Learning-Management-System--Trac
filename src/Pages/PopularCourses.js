@@ -54,12 +54,12 @@ export default function PopularCourses() {
               <Link to={`/coursedetails/${course.id}`} key={course.id} >
               <div
                 key={course.id}
-                className="bg-white border border-black rounded-lg shadow-md "
+                className="bg-white border border-black rounded-lg shadow-md transition-transform duration-300 ease-in-out transform hover:scale-105 "
               >
                 <img
                   src={course.image}
                   alt={course.title}
-                  className="object-cover w-full h-48 rounded-t-lg"
+                  className="object-cover w-full h-48 rounded-t-lg "
                 />
                 <h3 className="mt-4 mb-2 text-xl font-semibold text-center">
                   {course.title}
