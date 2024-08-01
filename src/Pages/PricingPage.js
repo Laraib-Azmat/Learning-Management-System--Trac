@@ -24,7 +24,7 @@ const PricingPage = () => {
 
 </div>
 
-    <div className='flex flex-col items-center gap-14 mb-20 mt-10 md:mt-[-10%] lg:mt-10'>
+    <div className='flex flex-col items-center gap-14 mb-20 mt-10 md:mt-[-20%] lg:mt-5'>
         <h2 className='text-3xl  font-bold '>Choose a Pricing Option</h2>
         <div className='flex items-center justify-center gap-10 md:gap-8 lg:gap-14 px-4 w-[100%] flex-wrap'>
 
