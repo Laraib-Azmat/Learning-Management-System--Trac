@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
 import Searchbar from '../Components/Searchbar'
 import GradeIcon from '@mui/icons-material/Grade';
-import { useParams } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 import dummydata from '../Components/Dummydata';
 import Skills from '../Components/Skills';
 import Certificate from '../Components/Certificate';
@@ -32,7 +32,7 @@ const Pricing = () => {
                 {
                     filtercourse.map((e) =>
                         <div className='flex flex-col'>
-                            <h2 className='text-3xl font-semibold'>Course : {e.title}</h2>
+                            <h2 className='text-md  md:text-xl lg:text-3xl font-semibold'>Course : {e.title}</h2>
                             <h3 className='mt-6'>Instructor : <span className='font-semibold underline'>{e.author}</span></h3>
                             <h4>Languages (2)</h4>
                             <div className='mt-4'>
@@ -40,7 +40,7 @@ const Pricing = () => {
                                 <button className='bg-white p-2 rounded-xl px-6 font-semibold mx-6'>Urdu</button>
                             </div>
                             <span className='mt-3 mb-3'>Note : Some content might not be Translated.</span>
-                            <button className='w-[140px] p-2 bg-[#ff0000] text-white font-semibold text-lg rounded-sm'>Enroll for 50$</button>
+                            <Link to="/payment" className='w-[140px] p-2 bg-[#ff0000] text-white font-semibold text-sm md:text-lg rounded-lg my-2'>Enroll for 50$</Link>
                             <span className='text-xs font-semibold'>5,657 already enrolled.</span>
                             <p className='mt-4 mb-4'>Certificates will be provided at the time of completion</p>
                         </div>

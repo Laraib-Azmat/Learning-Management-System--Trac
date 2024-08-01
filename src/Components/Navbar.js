@@ -95,7 +95,7 @@ const Navbar = () => {
                                 setactive("pricing");
                             }}
                         >
-                            Pricing
+                            Subscription
                         </Link>
 
                         <Link

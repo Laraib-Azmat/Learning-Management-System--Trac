@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import CourseDisplay from '../Components/CourseDisplay'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faSquareXmark} from '@fortawesome/free-solid-svg-icons'
+import { Link } from 'react-router-dom'
 
 const WorkShops = () => {
 
@@ -70,7 +71,7 @@ const WorkShops = () => {
         </label>
 
        </div>
-        <button className='text-sm bg-blue-600 text-gray-300 w-40 rounded-md py-1'>Apply Now!</button>
+        <Link to="/payment" className='text-sm bg-blue-600 text-gray-300 w-40 rounded-md py-1 text-center'>Apply Now!</Link>
     </form>
     </div>
 )}

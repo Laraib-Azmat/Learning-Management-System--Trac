@@ -10,7 +10,7 @@ const PricingPage = () => {
   return (
    <div >
 
-<div  className=" bg-cover md:bg-contain  bg-no-repeat bg-top h-[85vh]"
+<div  className=" bg-cover md:bg-contain  bg-no-repeat bg-top h-[60vh] md:h-[75vh] lg:h-[85vh]"
       style={{
         backgroundImage:  `url(${backgroundImg})`,
       }}>
@@ -24,8 +24,8 @@ const PricingPage = () => {
 
 </div>
 
-    <div className='flex flex-col items-center gap-14 mb-20 mt-10 md:mt-[-20%] lg:mt-5'>
-        <h2 className='text-3xl  font-bold '>Choose a Pricing Option</h2>
+    <div className='flex flex-col items-center gap-14 mb-20 mt-10 md:mt-[-4%] lg:mt-5'>
+        <h2 className=' text-md md:text-xl lg:text-3xl  font-bold '>Choose a Pricing Option</h2>
         <div className='flex items-center justify-center gap-10 md:gap-8 lg:gap-14 px-4 w-[100%] flex-wrap'>
 
         <div className=" cursor-pointer w-[190px] rounded-3xl bg-[#f5f5f5] relative p-7 border-2 border-[#c3c6ce] transition ease-out duration-500 overflow-visible group hover:border-[#008bf8] hover:shadow-[0_4px_18px_0_rgba(0,0,0,0.25)]">
