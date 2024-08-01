@@ -46,7 +46,7 @@ const CourseDisplay = () => {
         <div className="flex justify-center mt-4">
           <button
             onClick={handleLoadMore}
-            className="bg-gray-300 border border-gray-500 font-bold px-6 py-2 rounded-lg shadow hover:bg-gray-500"
+            className="bg-gray-300 border border-gray-500 font-bold px-2 sm:px-6 py-2 rounded-lg shadow hover:bg-gray-500 text-sm md:text-md"
           >
             See More
           </button>

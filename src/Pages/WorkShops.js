@@ -8,23 +8,23 @@ const WorkShops = () => {
     const [displayForm, setDisplayForm] = useState(false)
 
   return (
-    <div className=' relative bg-[#E3FAFF] flex flex-col gap-10 items-center px-24 py-10'>
+    <div className=' relative bg-[#E3FAFF] flex flex-col gap-10 items-center px-6 sm:px-10 md:px-16 lg:px-24 py-10'>
   
   <div className='flex justify-between items-center w-full'>
   <div className='flex flex-col gap-4'>
-        <h2 className='text-xl font-semibold '>Upcomming WorkShops</h2>
+        <h2 className=' text-md md:text-xl font-semibold '>Upcomming WorkShops</h2>
         <div className='h-1 w-full bg-gray-800'></div>
         </div>
-        <button onClick={()=>setDisplayForm(true)} className='bg-[#6A2C2C] text-white font-semibold rounded-md p-2 hover:bg-[red]'>Register</button>
+        <button onClick={()=>setDisplayForm(true)} className='bg-[#6A2C2C] text-white font-semibold rounded-md p-2 hover:bg-[red] text-sm sm:text-md'>Register</button>
   </div>
 
         <CourseDisplay/>
 {displayForm && (
    <div className='absolute w-full h-full bg-black top-0 bg-opacity-50 flex flex-col items-center gap-10 py-20'>
-     <form className=' relative bg-white w-[55%] items-center flex flex-col py-10 gap-5  rounded-md'>
+     <form className=' px-4 sm:px-1 relative bg-white w-[100%] sm:w-[90%] md:w-[55%] items-center flex flex-col py-10 gap-5  rounded-md'>
    <FontAwesomeIcon onClick={()=>setDisplayForm(false)} icon={faSquareXmark} className='absolute  right-10 top-10 text-xl text-blue-500 cursor-pointer' />
 
-        <h2 className='text-xl font-sans font-semibold mb-5 '>Register for Workshop</h2>
+        <h2 className=' text-sm sm:text-md md:text-xl font-sans font-semibold mb-5 self-start sm:self-center '>Register for Workshop</h2>
        
        <div className='flex flex-col gap-5 '>
         
