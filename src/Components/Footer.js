@@ -9,7 +9,7 @@ import { useNavigate } from 'react-router-dom'
 const Footer = () => {
   const navigate = useNavigate()
     return (
-        <div className='bg-black p-4 flex flex-col md:flex-row justify-between items-center text-center md:text-left'>
+        <div className='bg-black p-4 flex flex-col md:flex-row justify-between items-center text-center md:text-left '>
         <div className='mb-4 md:mb-0 cursor-pointer ' onClick={()=>{window.scrollTo(0,0);navigate('/')}}>
           <img src={logo} alt="Logo" className='h-[20px] sm:h-[45px]' />
         </div>

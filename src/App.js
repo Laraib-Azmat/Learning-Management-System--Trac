@@ -12,6 +12,10 @@ import Info from './Pages/Info';
 import Profile from "./Pages/Profile";
 import WhatsappIcon from "./Assests/WhatsApp-logo.png";
 import CourseDetails from './Pages/CourseDetails';
+import PricingPage from './Pages/PricingPage';
+import WorkShops from './Pages/WorkShops';
+import { Payment } from './Components/Payment';
+
 
 function App() {
   return (
@@ -28,9 +32,12 @@ function App() {
           <Route path='/login' element={<Login />}></Route>
           <Route path='/signup' element={<Signup />}></Route>
           <Route path='/userprofile' element={<Profile />}></Route>
+          <Route path='/pricing' element={<PricingPage />}></Route>
+          <Route path='/workshops' element={<WorkShops />}></Route>
+          <Route path='/payment' element={<Payment />}></Route>
         </Routes>
-        <Footer />
         <img src={WhatsappIcon} alt='WhatsappIcon' className="cursor-pointer hover:scale-110" style={{width:"4rem", height:"2.5rem", position:'fixed', bottom:50, right:15}}/>
+        <Footer />
       </BrowserRouter>
     </>
   );

@@ -2,6 +2,8 @@ import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import dummydata from '../Components/Dummydata';
 import ArrowRightIcon from '@mui/icons-material/ArrowRight';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faChevronLeft , faChevronRight} from '@fortawesome/free-solid-svg-icons'
 
 export default function PopularCourses() {
 
@@ -44,9 +46,9 @@ export default function PopularCourses() {
         <div className="flex items-center justify-between px-2 md:px-8">
           <button
             onClick={handleShuffle}
-            className="w-10 h-10 text-white bg-black rounded-full hover:bg-gray-300 hover:text-black"
+            className="w-10 h-10 text-white bg-black rounded-full hover:bg-gray-300 hover:text-black flex items-center justify-center"
           >
-            {"<"}
+           <FontAwesomeIcon icon={faChevronLeft} />
           </button>
 
           <div className="grid grid-cols-1 gap-8 px-3.5 md:grid-cols-2 xl:grid-cols-4 md:px-4">
@@ -54,7 +56,7 @@ export default function PopularCourses() {
               <Link onClick={()=>window.scrollTo(0,0)} to={`/coursedetails/${course.id}`} key={course.id} >
               <div
                 key={course.id}
-                className="bg-white border border-black rounded-lg shadow-md transition-transform duration-300 ease-in-out transform hover:scale-105 "
+                className=" relative bg-white border border-black rounded-lg shadow-md transition-transform duration-300 ease-in-out transform hover:scale-105 h-[100%] flex flex-col"
               >
                 <img
                   src={course.image}
@@ -64,11 +66,11 @@ export default function PopularCourses() {
                 <h3 className="mt-4 mb-2 text-xl font-semibold text-center">
                   {course.title}
                 </h3>
-                <p className="mb-4 text-center text-gray-500">
+                <p className="mb-4 text-center text-gray-500 flex-1">
                   BY: {course.author}
                 </p>
-                <div className="flex justify-end">
-                <Link onClick={()=>window.scrollTo(0,0)} to={`/course/${course.id}`}><span className='text-xs cursor-pointer'>Learn more<ArrowRightIcon></ArrowRightIcon></span></Link>
+                <div className="flex justify-end mb-2 text-end">
+                <Link onClick={()=>window.scrollTo(0,0)} to={`/course/${course.id}`}><span className='text-xs cursor-pointer hover:underline hover:text-blue-900 '>Learn more<ArrowRightIcon></ArrowRightIcon></span></Link>
                 </div>
               </div>
               </Link>
@@ -76,9 +78,9 @@ export default function PopularCourses() {
           </div>
           <button
             onClick={handleShuffle}
-            className="w-10 h-10 text-white bg-black rounded-full hover:bg-gray-300 hover:text-black"
+            className="w-10 h-10 text-white bg-black rounded-full font-bold hover:bg-gray-300 hover:text-black flex items-center justify-center"
           >
-           {">"}
+           <FontAwesomeIcon icon={faChevronRight} />
           </button>
         </div>
       </div>

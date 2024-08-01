@@ -10,7 +10,7 @@ const Navbar = () => {
     const navigate = useNavigate();
     return (
         <>
-            <div className=" relative z-1  w-[100%] z-[1]  bg-[#5fd6f4] flex  justify-between items-center p-3 text-md  ">
+            <div className=" relative z-1  w-[100%] z-[1]  bg-[#5fd6f4] flex  justify-between items-center p-3 text-md h-[15vh] ">
                 <div className="h-[65px] order-1 md:order-1">
                     <Link
                         to={"/"}
@@ -96,6 +96,19 @@ const Navbar = () => {
                             }}
                         >
                             Pricing
+                        </Link>
+
+                        <Link
+                            to={"/workshops"}
+                            className={`cursor-pointer font-bold ${active === "workshops" &&
+                                "text-red-600 font-bold border-b border-red-600"
+                                }`}
+                            onClick={() => {
+                                setOpen(false);
+                                setactive("workshops");
+                            }}
+                        >
+                            Workshops
                         </Link>
 
                     </ul>
