@@ -9,8 +9,8 @@ const Courses = () => (
         </div>        {/*  */}
 
         <div className='flex flex-col  sm:flex-row justify-center items-center'>
-            <div className='ml-[2em] mt-[2em] bg-gray-200 w-[250px] p-2 rounded-3xl'>
-                <label for="" className='font-semibold'>Category:</label>
+            <div className='ml-[2em] mt-[2em] bg-gray-200  w-[250px] p-2 rounded-3xl text-sm sm:text-md'>
+                <label for="" className='font-semibold mr-2'>Category:</label>
                 <select name="" id="cars" className='bg-transparent border-none outline-none'>
                     <option value="all">All</option>
                     <option value="web">Web Development</option>
@@ -18,8 +18,8 @@ const Courses = () => (
                     <option value="cyber">Cyber Security</option>
                 </select>
             </div>
-            <div className='ml-[2em] mt-[2em] bg-gray-200  w-[250px] p-2 rounded-3xl'>
-                <label for="" className='font-semibold'>Author:</label>
+            <div className='ml-[2em] mt-[2em] bg-gray-200  w-[250px] p-2 rounded-3xl text-sm sm:text-md'>
+                <label for="" className='font-semibold mr-2'>Author:</label>
                 <select name="" id="cars" className='bg-transparent border-none outline-none'>
                     <option value="all">All</option>
                     <option value="web">Web Development</option>
