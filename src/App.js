@@ -15,13 +15,13 @@ import CourseDetails from './Pages/CourseDetails';
 import PricingPage from './Pages/PricingPage';
 import WorkShops from './Pages/WorkShops';
 import { Payment } from './Components/Payment';
-import EditProfile from "./Pages/ProfileOptions/ProfileEdit";
-import Membership from './Pages/ProfileOptions/Membership';
-import PurchaseHistory from "./Pages/ProfileOptions/Purchase";
-import CreditCard from "./Pages/ProfileOptions/CreditCard";
-import Address from './Pages/ProfileOptions/Address';
-import ProfileContact from './Pages/ProfileOptions/ProfileContact';
-import CoursesSection from './Pages/ProfileOptions/CoursesSection';
+import EditProfile from "./Components/ProfileEdit";
+import Membership from './Components/Membership';
+import PurchaseHistory from "./Components/Purchase";
+import CreditCard from "./Components/CreditCard";
+import Address from './Components/Address';
+import ProfileContact from './Components/ProfileContact';
+import CoursesSection from './Components/CoursesSection';
 
 function App() {
   return (
