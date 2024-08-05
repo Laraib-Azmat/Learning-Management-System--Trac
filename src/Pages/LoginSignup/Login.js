@@ -8,7 +8,7 @@ export default function Login() {
   function userlogin(event) {
     event.preventDefault();
    
-    navigate('/userprofile');
+    navigate('/userprofile-editprofile');
   }
   return (
     <div  className=" h-[85vh] relative flex items-center justify-center  bg-cover bg-center" style={{ backgroundImage:`url(${background})` }}>
