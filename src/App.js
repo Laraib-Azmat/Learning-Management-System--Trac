@@ -15,7 +15,13 @@ import CourseDetails from './Pages/CourseDetails';
 import PricingPage from './Pages/PricingPage';
 import WorkShops from './Pages/WorkShops';
 import { Payment } from './Components/Payment';
-
+import EditProfile from "./Pages/ProfileOptions/ProfileEdit";
+import Membership from './Pages/ProfileOptions/Membership';
+import PurchaseHistory from "./Pages/ProfileOptions/Purchase";
+import CreditCard from "./Pages/ProfileOptions/CreditCard";
+import Address from './Pages/ProfileOptions/Address';
+import ProfileContact from './Pages/ProfileOptions/ProfileContact';
+import CoursesSection from './Pages/ProfileOptions/CoursesSection';
 
 function App() {
   return (
@@ -36,6 +42,15 @@ function App() {
           <Route path='/workshops' element={<WorkShops />}></Route>
           <Route path='/payment' element={<Payment />}></Route>
         </Routes>
+        <Routes>
+            <Route path="/userprofile-editprofile" element={<EditProfile />} />
+            <Route path="/userprofile-membership" element={<Membership />} />
+            <Route path="/userprofile-purchase" element={<PurchaseHistory />} />
+            <Route path="/userprofile-editcreditcard" element={<CreditCard />} />
+            <Route path="/userprofile-address" element={<Address />} />
+            <Route path="/userprofile-courses" element={<CoursesSection />} />
+            <Route path="/userprofile-profilecontact" element={<ProfileContact />} />
+          </Routes>
         <img src={WhatsappIcon} alt='WhatsappIcon' className="cursor-pointer hover:scale-110" style={{width:"4rem", height:"2.5rem", position:'fixed', bottom:50, right:15}}/>
         <Footer />
       </BrowserRouter>
