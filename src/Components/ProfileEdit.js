@@ -42,7 +42,7 @@ export default function ProfileEdit() {
 
   return (
     <section className="p-6 bg-gray-100 min-h-[75vh]">
-      <div className="flex items-center justify-evenly">
+      <div className="flex flex-col sm:flex-row items-center justify-evenly">
         <div
           className="flex flex-col items-center justify-center w-20 h-20 sm:w-40 sm:h-40 rounded-full bg-gray-200 overflow-hidden cursor-pointer"
           onClick={() => document.getElementById('fileInput').click()}
