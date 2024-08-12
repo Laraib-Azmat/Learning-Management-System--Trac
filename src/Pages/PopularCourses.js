@@ -9,11 +9,13 @@ import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons
 
 export default function PopularCourses() {
   const settings = {
-    dots: true,
+
     infinite: true,
     speed: 500,
     slidesToShow: 4,
     slidesToScroll: 1,
+    autoplaySpeed: 3000,
+    autoplay: true,
     nextArrow: <SampleNextArrow />,
     prevArrow: <SamplePrevArrow />,
     responsive: [
@@ -72,17 +74,17 @@ export default function PopularCourses() {
         </h2>
 
         <div className='w-3/4 m-auto'>
-          <div className="mt-20 relative">
+          <div className="mt-20 relative ">
             <Slider {...settings}>
               {dummydata.map((course, index) => (
-                <Link onClick={() => window.scrollTo(0, 0)} to={`/coursedetails/${course.id}`} key={index} className="min-w-[25%] h-[350px]">
-                  <div className="bg-white border border-black rounded-lg shadow-md transition-transform duration-300 ease-in-out transform hover:scale-105 flex flex-col h-full mx-2">
+                <Link onClick={() => window.scrollTo(0, 0)} to={`/coursedetails/${course.id}`} key={index} className="min-w-[30%] h-[350px] mb-5">
+                  <div className="bg-white border border-black rounded-lg shadow-md transition-transform duration-300 ease-in-out transform hover:scale-105 flex flex-col h-full mx-2 ">
                     <img
                       src={course.image}
                       alt={course.title}
                       className="object-cover w-full h-48 rounded-t-lg"
                     />
-                    <div>
+                    <div className='p-5'>
                       <h3 className="mt-4 mb-2 text-xl font-semibold text-center">
                         {course.title}
                       </h3>
